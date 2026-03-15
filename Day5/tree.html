@@ -1,0 +1,32 @@
+<form id="login" method="post" action="/opentaps/control/login"> //Parent
+        <p class="top">  //Child
+          <label for="username">Username</label> // cousins
+          <input class="inputLogin" type="text" id="username" name="USERNAME" size="50">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input class="inputLogin" type="password" id="password" name="PASSWORD" size="50">
+        </p>
+
+        <p>
+          <input class="decorativeSubmit" type="submit" value="Login">
+        </p>
+      </form>
+
+
+
+
+<!-- 
+      Parent - Child Relationship
+
+      
+      GrandParent relative xpath//tagName of grand child --> //form[@id="login"]//input
+      
+      Child - Parent Relationship
+
+      Child relative xpath/parent::parent tagName --> //input[@id="username"]/parent::p
+
+      //label[contains(text(),'Search')]/following-sibling::input
+
+      
+      -->
